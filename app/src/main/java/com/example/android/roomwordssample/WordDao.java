@@ -1,3 +1,5 @@
+package com.example.android.roomwordssample;
+
 /*
  * Copyright (C) 2017 Google Inc.
  *
@@ -14,6 +16,7 @@
  * limitations under the License.
  */
 
+<<<<<<< HEAD:app/src/main/java/com/example/android/roomwordssample/WordDao.kt
 package com.example.android.roomwordssample
 
 import androidx.room.Dao
@@ -21,6 +24,15 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
+=======
+import androidx.lifecycle.LiveData;
+import androidx.room.Dao;
+import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
+import androidx.room.Query;
+
+import java.util.List;
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin:app/src/main/java/com/example/android/roomwordssample/WordDao.java
 
 /**
  * The Room Magic is in this file, where you map a method call to an SQL query.
@@ -32,8 +44,9 @@ import kotlinx.coroutines.flow.Flow
  */
 
 @Dao
-interface WordDao {
+public interface WordDao {
 
+<<<<<<< HEAD:app/src/main/java/com/example/android/roomwordssample/WordDao.kt
     // The flow always holds/caches latest version of data. Notifies its observers when the
     // data has changed.
     @Query("SELECT * FROM word_table ORDER BY word ASC")
@@ -44,4 +57,18 @@ interface WordDao {
 
     @Query("DELETE FROM word_table")
     suspend fun deleteAll()
+=======
+    // LiveData is a data holder class that can be observed within a given lifecycle.
+    // Always holds/caches latest version of data. Notifies its active observers when the
+    // data has changed. Since we are getting all the contents of the database,
+    // we are notified whenever any of the database contents have changed.
+    @Query("SELECT * from word_table ORDER BY word ASC")
+    LiveData<List<Word>> getAlphabetizedWords();
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    void insert(Word word);
+
+    @Query("DELETE FROM word_table")
+    void deleteAll();
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin:app/src/main/java/com/example/android/roomwordssample/WordDao.java
 }
