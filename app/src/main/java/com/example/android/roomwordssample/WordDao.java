@@ -16,6 +16,7 @@ package com.example.android.roomwordssample;
  * limitations under the License.
  */
 
+<<<<<<< HEAD:app/src/main/java/com/example/android/roomwordssample/WordDao.java
 <<<<<<< HEAD:app/src/main/java/com/example/android/roomwordssample/WordDao.kt
 package com.example.android.roomwordssample
 
@@ -25,6 +26,8 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 =======
+=======
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin:app/src/main/java/com/example/android/roomwordssample/WordDao.kt
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
@@ -32,7 +35,10 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
 import java.util.List;
+<<<<<<< HEAD:app/src/main/java/com/example/android/roomwordssample/WordDao.java
 >>>>>>> parent of 7baf34d... Converting the code to Kotlin:app/src/main/java/com/example/android/roomwordssample/WordDao.java
+=======
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin:app/src/main/java/com/example/android/roomwordssample/WordDao.kt
 
 /**
  * The Room Magic is in this file, where you map a method call to an SQL query.
@@ -45,12 +51,15 @@ import java.util.List;
 
 @Dao
 public interface WordDao {
+<<<<<<< HEAD:app/src/main/java/com/example/android/roomwordssample/WordDao.java
 
 <<<<<<< HEAD:app/src/main/java/com/example/android/roomwordssample/WordDao.kt
     // The flow always holds/caches latest version of data. Notifies its observers when the
     // data has changed.
     @Query("SELECT * FROM word_table ORDER BY word ASC")
     fun getAlphabetizedWords(): Flow<List<Word>>
+=======
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin:app/src/main/java/com/example/android/roomwordssample/WordDao.kt
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(word: Word)
@@ -70,5 +79,8 @@ public interface WordDao {
 
     @Query("DELETE FROM word_table")
     void deleteAll();
+<<<<<<< HEAD:app/src/main/java/com/example/android/roomwordssample/WordDao.java
 >>>>>>> parent of 7baf34d... Converting the code to Kotlin:app/src/main/java/com/example/android/roomwordssample/WordDao.java
+=======
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin:app/src/main/java/com/example/android/roomwordssample/WordDao.kt
 }

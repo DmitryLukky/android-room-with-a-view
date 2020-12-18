@@ -20,10 +20,13 @@ android {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
+<<<<<<< HEAD
 
     kotlinOptions {
         jvmTarget = "1.8"
     }
+=======
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin
 }
 dependencies {
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
@@ -32,6 +35,7 @@ dependencies {
     // Dependencies for working with Architecture components
     // You'll probably have to update the version numbers in build.gradle (Project)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Room components
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"
@@ -57,6 +61,16 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
     annotationProcessor "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
 >>>>>>> parent of 7baf34d... Converting the code to Kotlin
+=======
+// Room components
+    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
+    annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
+    androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+
+    // Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin
 
     // UI
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
@@ -66,7 +80,11 @@ dependencies {
     testImplementation "junit:junit:$rootProject.junitVersion"
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
 <<<<<<< HEAD
+<<<<<<< HEAD
     androidTestImplementation ("androidx.test.espresso:espresso-core:$rootProject.espressoVersion", {
+=======
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin
 =======
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
 >>>>>>> parent of 7baf34d... Converting the code to Kotlin

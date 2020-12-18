@@ -2,8 +2,12 @@
 
 buildscript {
 <<<<<<< HEAD
+<<<<<<< HEAD
     ext.kotlin_version = '1.4.10'
 
+=======
+    
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin
 =======
     
 >>>>>>> parent of 7baf34d... Converting the code to Kotlin
@@ -13,8 +17,13 @@ buildscript {
     }
     dependencies {
 <<<<<<< HEAD
+<<<<<<< HEAD
         classpath 'com.android.tools.build:gradle:4.1.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+=======
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin
 =======
         classpath 'com.android.tools.build:gradle:3.4.2'
         
@@ -38,6 +47,7 @@ task clean(type: Delete) {
 
 ext {
 <<<<<<< HEAD
+<<<<<<< HEAD
     activityVersion = '1.1.0'
     appCompatVersion = '1.2.0'
     constraintLayoutVersion = '2.0.2'
@@ -51,9 +61,14 @@ ext {
     espressoVersion = '3.1.0'
     androidxJunitVersion = '1.1.2'
 =======
+=======
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin
     roomVersion = '2.2.0'
     archLifecycleVersion = '2.2.0-beta01'
     coreTestingVersion = '2.1.0'
     materialVersion = '1.0.0'
+<<<<<<< HEAD
+>>>>>>> parent of 7baf34d... Converting the code to Kotlin
+=======
 >>>>>>> parent of 7baf34d... Converting the code to Kotlin
 }
